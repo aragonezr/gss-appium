@@ -1,0 +1,33 @@
+body {
+    font-family: "Helvetica Neue", Times, serif;
+    font-size: 14px;
+    color: #393C3D;
+    margin: 0;
+}
+
+h1 {
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+ul {
+    margin-top: -2px;
+}
+
+li {
+    margin-left: -40px;
+    margin-bottom: 0;
+    padding: 1px;
+    list-style: none;
+}
+
+li:before {
+    content: "\2022";
+    font-size: 14px;
+    padding-right: 8px;
+}

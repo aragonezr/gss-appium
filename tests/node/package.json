@@ -1,0 +1,33 @@
+{
+  "name": "gss-appium-node",
+  "version": "1.0.0",
+  "description": "Appium Node Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "appium",
+    "ios",
+    "tests"
+  ],
+  "author": "Hyatt Edgar Ramirez",
+  "license": "Apache 2",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1",
+    "colors": "^1.0.3",
+    "express": "^4.10.2",
+    "q": "^1.1.1",
+    "underscore": "^1.7.0",
+    "wd": "^0.3.11"
+  }
+}
