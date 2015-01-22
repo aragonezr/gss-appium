@@ -1,21 +1,27 @@
 "use strict";
 
-// asserts
+var RoomKeyPage = function () {
 
-exports.assert = function (driver) {
-	return driver.elementByName('Room Key').should.eventually.exist;
+	return {
+		// assertions
+		assert : function (driver) {
+			return driver.elementByName('Room Key').should.eventually.exist;
+		},
+
+		// actions
+		confirmation : function (driver) {
+			return driver.elementByName('You\'re checked in.').should.eventually.exist;
+		},
+
+		clickDone : function (driver) {
+			return driver.elementByName('Done').click();
+		},
+
+		clickClose : function (driver) {
+			return driver.elementByName('CloseButton').click();
+		}
+	}
+
 };
 
-exports.confirmation = function (driver) {
-	return driver.elementByName('You\'re checked in.').should.eventually.exist;
-};
-
-// actions
-
-exports.clickDone = function (driver) {
-	return driver.elementByName('Done').click();
-};
-
-exports.clickClose = function (driver) {
-	return driver.elementByName('CloseButton').click();
-};
+exports.roomKeyPage = new RoomKeyPage();

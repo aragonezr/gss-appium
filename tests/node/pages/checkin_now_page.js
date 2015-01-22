@@ -1,14 +1,23 @@
 "use strict";
 
-exports.assert = function (driver) {
-	console.log(driver.elementByClassName('UIAAlert'));
-	return driver.alertText().should.exist;
-}
+var CheckInNowPage = function () {
+	return {
+		// assertions
+		assert : function (driver) {
+			return driver.alertText().should.exist;
+		},
 
-exports.clickYes = function (driver) {
-	return driver.acceptAlert();
+		// actions
+		clickYes : function (driver) {
+			return driver.acceptAlert();
+		},
+
+		clickCancel : function (driver) {
+			return driver.dismissAlert();
+		}
+	}
 };
 
-exports.clickCancel = function (driver) {
-	return driver.dismissAlert();
-};
+// asserts
+
+exports.checkInNowPage = new CheckInNowPage();
