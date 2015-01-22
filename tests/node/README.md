@@ -70,6 +70,11 @@ Click Launch button to start Appium server.
 You must see the app running from the simulator.
 Then click Inspector button.
 
+## Troubles?
+
+- Make sure the Appium points to the right location of the .app (/tests/node/helpers/apps.js)
+- Make sure you have set DEV env variable.
+
 #### Reference
 - https://github.com/admc/wd
 - https://github.com/appium/appium/blob/master/README.md
